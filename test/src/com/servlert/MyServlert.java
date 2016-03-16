@@ -24,6 +24,7 @@ public class MyServlert extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setAttribute("hello", URLEncoder.encode("hello","gbk"));
+		request.setAttribute("hello", URLEncoder.encode("hello1","gbk"));
 		request.getRequestDispatcher("/index.jsp").forward(request, response);
 	}
 
